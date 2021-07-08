@@ -12,18 +12,41 @@ let algeria = new Country("Algeria", "Arabic and Berber", "Sup", ["blue", "yello
 
 
 function SwitchCountry() {
-    let input = "USA";
+    let e = document.getElementById("CountryList")
+    let input = e.value
     let country;
 
     if (input === "USA") {
-        //set country to usa 
         country = usa;
+        document.getElementById("CountryName").innerHTML = country.name;
+        document.getElementById("OfficialLanguage").innerHTML = country.lang;
+        document.getElementById("HelloWorld").innerHTML = country.greeting;
+        document.getElementById("Color1").style.backgroundColor = country.colors[1];
+        document.getElementById("Color2").style.backgroundColor = country.colors[2];
+        document.getElementById("Color1").style.backgroundColor = country.colors[3];
+
+
+
+
+        
     }
     else if (input === "Mexico") {
         country = mexico;
+        document.getElementById("CountryName").innerHTML = country.name;
+        document.getElementById("OfficialLanguage").innerHTML = country.lang;
+        document.getElementById("HelloWorld").innerHTML = country.greeting;
+        document.getElementById("Color1").style.backgroundColor = country.colors[1];
+        document.getElementById("Color2").style.backgroundColor = country.colors[2];
+        document.getElementById("Color1").style.backgroundColor = country.colors[3];
     }
     else if (input === "Algeria") {
         country = algeria;
+        document.getElementById("CountryName").innerHTML = country.name;
+        document.getElementById("OfficialLanguage").innerHTML = country.lang;
+        document.getElementById("HelloWorld").innerHTML = country.greeting;
+        document.getElementById("Color1").style.backgroundColor = country.colors[1];
+        document.getElementById("Color2").style.backgroundColor = country.colors[2];
+        document.getElementById("Color1").style.backgroundColor = country.colors[3];
     }
 
 }
